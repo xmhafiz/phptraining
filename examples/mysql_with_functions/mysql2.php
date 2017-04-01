@@ -22,6 +22,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo '<td>' . $row['name'] . '</td>';
     echo '<td>' . $row['price'] . '</td>';
     echo '<td> <a href="edit_form.php?id=' . $row['id'] . '">Edit</a></td>';
+    echo '<td> <a href="delete_form.php?id=' . $row['id'] . '">Delete</a></td>';
     echo '</tr>';
 }
 echo '</table>';
