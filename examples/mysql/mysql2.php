@@ -2,7 +2,12 @@
 
 // connect to database
 // conn = mysqli_connect(mysql ip address, username, password, database name)
-$connection = mysqli_connect('localhost', 'root', 'root', 'demodb');
+$hostname = 'localhost';
+$database_user = 'root';
+$database_password = 'root';
+$database_name = 'demodb';
+
+$connection = mysqli_connect($hostname, $database_user, $database_password, $database_name);
 
 // check if connection error
 if (mysqli_connect_errno()) {
@@ -29,3 +34,7 @@ while ($row = mysqli_fetch_array($result)) {
     echo '</tr>';
 }
 echo '</table>';
+?>
+
+<br><br>
+<a href="form.php">Add product</a>
