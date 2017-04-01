@@ -9,7 +9,7 @@
 			<td>Ahmad Albab</td>
 			<td>11 Tahun</td>
 		</tr>
-<tr>
+		<tr>
 			<td>Rahim Maarof</td>
 			<td>10 Tahun 3 Bulan</td>
 		</tr>
